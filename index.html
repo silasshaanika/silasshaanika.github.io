@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio | Full-stack engineer</title>
+<meta name="description" content="Portfolio of a full-stack engineer: projects, case studies and about me.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stage" id="stage">
+  <div class="lamp" aria-hidden="true"></div>
+  <div id="bursts" aria-hidden="true"></div>
+  <div class="ticker" aria-hidden="true"><div class="tick mono" id="tick"></div></div>
+
+  <main class="wrap">
+    <section id="cover" class="cover-wrap"></section>
+    <section id="book" class="book" hidden>
+      <div class="paper"><div id="page"></div></div>
+    </section>
+  </main>
+
+  <nav class="controls" id="controls" aria-label="Book navigation" hidden>
+    <button class="btn mono ctl" id="prev" aria-label="Previous page">← Prev</button>
+    <div class="dots" id="dots"></div>
+    <button class="btn mono ctl" id="next" aria-label="Next page">Next →</button>
+    <button class="btn mono ctl" id="theme">Dark page</button>
+  </nav>
+</div>
+<script src="content.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
